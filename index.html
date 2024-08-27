@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es-pe">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Encriptador de Texto</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header></header>
+        <main class="main">
+            <section class="mainColumnaA">
+                <h1 class="mainColumnaATitulo">Encriptador de Texto</h1>
+                <textarea class="mainColumnaAInput" id="textoIngresado" placeholder="Ingrese el texto aquí"></textarea>
+                <div class="mainColumnaAInst">
+                        <span class="mainColumnaAInstAdv"></span>
+                        <p class="mainColumnaAInstLimit">Solo letras minúsculas y sin ascentos</p>
+                </div>
+                <div class="mainColumnaAButtons">
+                    <button onclick="encriptar();" class="mainColumnaAButtonsFnctns">Encriptar</button>
+                    <button onclick="desencriptar();" class="mainColumnaAButtonsFnctns">Desencriptar</button>
+                </div>
+            </section>
+            <section class="mainColumnaB">
+                <div class="mainColumnaBAntes" id="inicio">
+                    <img class="mainColumnaBImagen" id="imagen" src="./assets/Muñeco.png" alt="Imagen de buscando">
+                    <h1 class="mainColumnaBTitulo"  id="tituloB">Ningun mensaje fue encontrado</h1>
+                    <p class="mainColumnaBIngresar" id="parrafoB">Ingresa el texto que desees encriptar o desencriptar</p>
+                </div>
+                <div class="mainColumnaBResultado" id="resultado">
+                    <p class="mainColumnaBSalida" id="salida"></p>
+                    <button onclick="copiar()" class="mainColumnaBButton" id="botonCopiar">Copiar</button>
+                </div>
+                
+            </section>
+        </main>
+        <footer class="footer">
+            <p>Desarrollado por Jhoyner Calampa</p>
+        </footer>       
+        <script src="encriptador.js"></script> 
+    </body>
+</html>
